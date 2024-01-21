@@ -1,4 +1,4 @@
-function ingresar() {
+const ingresar = ()=> {
   let select1 = document.querySelector("#select-1").value;
   let select2 = document.querySelector("#select-2").value;
   let select3 = document.querySelector("#select-3").value;
@@ -11,6 +11,6 @@ console.log('::>', select1, select2, select3);
     resultado("El password ingresado no es correcto");
   }
 };
-function resultado(mensaje) {
+const resultado = (mensaje)=> {
   document.querySelector("#resultado").innerHTML = mensaje;
 };
